@@ -1,0 +1,57 @@
+// White Mode
+$backgroundColor: #fff;
+$fontColor: #2b546a;
+$shadowColor: rgba(0, 0, 0, 0.589);
+
+// Dark Mode
+// $backgroundColor: #2b546a;
+// $fontColor: #fff;
+// $shadowColor: rgba(255, 255, 255, 0.589);
+
+
+
+
+.header {
+  height: 48px;
+  background-color: $backgroundColor;
+  box-shadow: 0 1px 3px $shadowColor;
+
+  .header-logo {
+    float: left;
+    background-color: $fontColor;
+    transition-duration: 0.3s;
+
+    span {
+      vertical-align: middle;
+      color: $backgroundColor;
+      font-size: 30px;
+      padding: 9px 10px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      transition-duration: 0.3s;
+    }
+  }
+
+  .header-list {
+    li {
+      list-style: none;
+      float: left;
+      padding: 12px 10px;
+    }
+    a {
+      color: $fontColor;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
