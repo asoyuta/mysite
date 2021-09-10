@@ -25,6 +25,7 @@ const SpeechBubble = (props: Props) => {
     <div className='speech-bubble' key={key}>
       <Furigana jpn={jpn}></ Furigana>
       <p>{eng}</p>
+      <p>{person}</p>
     </div>
   );
 }
