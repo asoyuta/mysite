@@ -22,6 +22,7 @@ $shadowColor: rgba(0, 0, 0, 0.589);
 
 body {
   background-color: rgb(252, 255, 236);
+  font-family: 'Arial', 'メイリオ';
 }
 
 ////////////////////* Header *////////////////////
@@ -64,7 +65,8 @@ body {
 
 ////////////////////* Dialogue *////////////////////
 
-.Dialogue {
+.dialogue {
+  padding: 20px;
   background-color: #92b8ff;
   width: 60%;
   margin: auto;
@@ -76,15 +78,13 @@ body {
   .speech-bubble {
     position: relative;
     display: inline-block;
-    margin: 10px 0 10px 30px;
-    padding: 20px 20px;
-    color: #555;
-    font-size: 16px;
+    margin: 10px 30px;
+    padding: 12px 30px;
     background: #e0edff;
-    border-radius: 10px;
-  
+    border-radius: 15px;
+
     ::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 50%;
       left: -30px;
@@ -92,22 +92,27 @@ body {
       border: 15px solid transparent;
       border-right: 15px solid #e0edff;
     }
-  
-    p {
-      color: rgb(0, 0, 0);
-      margin: 0;
-      padding: 0;
-      text-align: center;
+
+    .bubble-content {
+      margin: 5px;
+
+      .eng-line {
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        margin: 3px;
+        text-align: center;
+      }
     }
   }
 }
 
-////////////////////* furiganaText *////////////////////
+////////////////////* japaneseLine *////////////////////
 
-.furiganaText {
+.jpn-line {
   font-size: 20px;
   color: black;
   text-align: center;
+  margin: 3px 3px;
   ruby {
     rt {
       font-size: 10px;

@@ -94,7 +94,7 @@ export const Furigana = (jpnLine: JpnLine) => {
     textWordsList[i] = [nihongoWordsList[i], furiganaWordsList[i]]
   }
   return (
-    <div className="furiganaText">
+    <div className="jpn-line">
       {textWordsList.map((part) => (
         part[1] 
         ? <ruby>{part[0]}<rt>{part[1]}</rt></ruby>

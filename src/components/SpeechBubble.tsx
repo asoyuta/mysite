@@ -12,13 +12,15 @@ const SpeechBubble = (lineInfo: LineInfo) => {
   return (
     <div className="bubble-wrapper">
       <div className="speech-bubble">
-        <Furigana
-          nihongo={jpnLine.nihongo}
-          hiragana={jpnLine.hiragana}
-          nihongoWordsList={jpnLine.nihongoWordsList}
-          furiganaWordsList={jpnLine.furiganaWordsList}
-        ></Furigana>
-        <p>{engLine}</p>
+        <div className="bubble-content">
+          <Furigana
+            nihongo={jpnLine.nihongo}
+            hiragana={jpnLine.hiragana}
+            nihongoWordsList={jpnLine.nihongoWordsList}
+            furiganaWordsList={jpnLine.furiganaWordsList}
+          />
+          <p className="eng-line">{engLine}</p>
+        </div>
       </div>
     </div>
   )
