@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import Dialogue from './pages/Dialogue';
+import DialoguePage from './pages/DialoguePage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dialogue />
+    <DialoguePage />
   </React.StrictMode>,
   document.getElementById('root')
 );

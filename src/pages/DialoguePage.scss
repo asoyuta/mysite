@@ -1,0 +1,117 @@
+////////////////////* css Reset *////////////////////
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+////////////////////* color mode *////////////////////
+
+// White Mode
+$backgroundColor: #fff;
+$fontColor: #2b546a;
+$shadowColor: rgba(0, 0, 0, 0.589);
+
+// Dark Mode
+// $backgroundColor: #2b546a;
+// $fontColor: #fff;
+// $shadowColor: rgba(255, 255, 255, 0.589);
+
+////////////////////* body *////////////////////
+
+body {
+  background-color: rgb(252, 255, 236);
+}
+
+////////////////////* Header *////////////////////
+
+.header {
+  height: 48px;
+  background-color: $backgroundColor;
+  box-shadow: 0 1px 3px $shadowColor;
+
+  .header-logo {
+    float: left;
+    background-color: $fontColor;
+    transition-duration: 0.3s;
+
+    span {
+      vertical-align: middle;
+      color: $backgroundColor;
+      font-size: 30px;
+      padding: 9px 10px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      transition-duration: 0.3s;
+    }
+  }
+
+  .header-list {
+    li {
+      list-style: none;
+      float: left;
+      padding: 12px 10px;
+    }
+    a {
+      color: $fontColor;
+      text-decoration: none;
+    }
+  }
+}
+
+////////////////////* Dialogue *////////////////////
+
+.Dialogue {
+  background-color: #92b8ff;
+  width: 60%;
+  margin: auto;
+}
+
+////////////////////* Speech Bubble *////////////////////
+
+.bubble-wrapper {
+  .speech-bubble {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0 10px 30px;
+    padding: 20px 20px;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+    border-radius: 10px;
+  
+    ::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      margin-top: -15px;
+      border: 15px solid transparent;
+      border-right: 15px solid #e0edff;
+    }
+  
+    p {
+      color: rgb(0, 0, 0);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+////////////////////* furiganaText *////////////////////
+
+.furiganaText {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  ruby {
+    rt {
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+}

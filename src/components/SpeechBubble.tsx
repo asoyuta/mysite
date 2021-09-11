@@ -1,33 +1,27 @@
-import './SpeechBubble.scss';
-import {Furigana} from "./Furigana"
+import { Furigana, JpnLine } from './Furigana'
 
-interface Jpn {
-  key: number,
-  japanese: string,
-  hiragana: string,
-  japaneseArray?: Array<string>,
-  furiganaArray?: Array<string>
+interface LineInfo {
+  person: string
+  jpnLine: JpnLine
+  engLine: string
 }
 
-interface Props {
-  line: {
-    key: number,
-    person: string, 
-    jpn: Jpn,
-    eng: string
-  }
-}
+const SpeechBubble = (lineInfo: LineInfo) => {
+  const { jpnLine, engLine } = lineInfo
 
-const SpeechBubble = (props: Props) => {
-  const {key, person, jpn, eng} = props.line
-
-  return(
-    <div className='speech-bubble' key={key}>
-      <Furigana jpn={jpn}></ Furigana>
-      <p>{eng}</p>
-      <p>{person}</p>
+  return (
+    <div className="bubble-wrapper">
+      <div className="speech-bubble">
+        <Furigana
+          nihongo={jpnLine.nihongo}
+          hiragana={jpnLine.hiragana}
+          nihongoWordsList={jpnLine.nihongoWordsList}
+          furiganaWordsList={jpnLine.furiganaWordsList}
+        ></Furigana>
+        <p>{engLine}</p>
+      </div>
     </div>
-  );
+  )
 }
 
-export default SpeechBubble;
+export default SpeechBubble
