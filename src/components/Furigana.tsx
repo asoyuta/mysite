@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 import { Jpn } from "../pages/data"
 
-export const Furigana = (jpn: Jpn) => {
+const Furigana = (jpn: Jpn) => {
   const { fullDSD, furiDSD } = jpn
   let fullD = fullDSD.split('#')
   let furiD = furiDSD.split('#')
@@ -31,3 +31,5 @@ export const Furigana = (jpn: Jpn) => {
     </Fragment>
   )
 }
+
+export default Furigana

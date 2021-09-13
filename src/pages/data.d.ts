@@ -16,11 +16,11 @@ export interface LineInfo {
   desc?: string
 }
 
-declare module './data.json' {
-  interface Data {
-    lineInfoList: LineInfo[]
-  }
+export interface Data {
+  lineInfoList: LineInfo[]
+}
 
+declare module './data.json' {
   const data: Data
   export = data
 }

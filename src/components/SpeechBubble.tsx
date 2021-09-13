@@ -1,5 +1,5 @@
-import { Furigana } from './Furigana'
 import { LineInfo } from '../pages/data';
+import { Furigana } from './index';
 
 const SpeechBubble = (lineInfo: LineInfo) => {
   return (
