@@ -8,19 +8,31 @@ export interface Eng {
   literal?: string
 }
 
+export interface PersonInfo {
+  name: string
+  src: string
+  person: string
+}
+
 export interface LineInfo {
   id: number
-  name: string
+  personName: string
   jpn: Jpn
   eng: Eng
   desc?: string
 }
 
+export interface PersonLineInfos {
+  personInfo: PersonInfo
+  lineInfo: LineInfo
+}
+
 export interface Data {
+  personInfoList: PersonInfo[]
   lineInfoList: LineInfo[]
 }
 
-declare module './data.json' {
+declare module '*.json' {
   const data: Data
   export = data
 }

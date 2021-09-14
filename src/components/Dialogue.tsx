@@ -1,17 +1,18 @@
-import { SpeechBubble } from './index'
-import { Data } from '../pages/data';
+import { Data } from '../index.d'
+import { Line } from './index'
 
 const Dialogue = (data: Data) => {
   return (
     <div className="dialogue">
       {data.lineInfoList.map((lineInfo) => (
-        <SpeechBubble
-          id={lineInfo.id}
-          name={lineInfo.name}
-          jpn={lineInfo.jpn}
-          eng={lineInfo.eng}
-          desc={lineInfo.desc}
-        />
+        <div className="line">
+          {data.personInfoList.map(
+            (personInfo) =>
+              personInfo.name === lineInfo.personName && (
+                <Line personInfo={personInfo} lineInfo={lineInfo} />
+              ),
+          )}
+        </div>
       ))}
     </div>
   )

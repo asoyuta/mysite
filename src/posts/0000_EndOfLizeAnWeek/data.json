@@ -1,8 +1,12 @@
 {
+  "personInfoList": [
+    { "name": "Ange", "src": "", "person": "" },
+    { "name": "Lize", "src": "", "person": "" }
+  ],
   "lineInfoList": [
     {
       "id": 1,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$じゃあこれで$#$今度$#$こそ$#$本当$#$にお$#$別$#$れだ$",
         "furiDSD": "$$#$こんど$#$$#$ほんとう$#$$#$わか$#$$"
@@ -15,14 +19,14 @@
     },
     {
       "id": 2,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$終$#$わりかぁ…やばぁ…$", "furiDSD": "$お$#$$" },
       "eng": { "free": "It's ending... Ah...", "literal": "" },
       "desc": "やばい"
     },
     {
       "id": 3,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": {
         "fullDSD": "$もうリゼアンウィーク$#$終$#$わりだって…$",
         "furiDSD": "$$#$お$#$$"
@@ -32,70 +36,70 @@
     },
     {
       "id": 4,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$終$#$わりだってさ…$", "furiDSD": "$お$#$$" },
       "eng": { "free": "It's ending...", "literal": "" },
       "desc": ""
     },
     {
       "id": 5,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$やばいなぁ…$", "furiDSD": "$$" },
       "eng": { "free": "I can't believe it...", "literal": "" },
       "desc": "やばい"
     },
     {
       "id": 6,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$んん…$", "furiDSD": "$$" },
       "eng": { "free": "Mm...", "literal": "" },
       "desc": ""
     },
     {
       "id": 7,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$…$", "furiDSD": "$$" },
       "eng": { "free": "...", "literal": "" },
       "desc": ""
     },
     {
       "id": 8,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$…$", "furiDSD": "$$" },
       "eng": { "free": "...", "literal": "" },
       "desc": ""
     },
     {
       "id": 9,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$…$", "furiDSD": "$$" },
       "eng": { "free": "...", "literal": "" },
       "desc": ""
     },
     {
       "id": 10,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$やめよっか$", "furiDSD": "$$" },
       "eng": { "free": "Let's stop thinking", "literal": "Let's stop" },
       "desc": ""
     },
     {
       "id": 11,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$やめよう$", "furiDSD": "$$" },
       "eng": { "free": "OK", "literal": "Let's stop" },
       "desc": ""
     },
     {
       "id": 12,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$😂$", "furiDSD": "$$" },
       "eng": { "free": "😂", "literal": "" },
       "desc": ""
     },
     {
       "id": 13,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": {
         "fullDSD": "$やめよう。$#$深$#$くは$#$考$#$えない$",
         "furiDSD": "$$#$ふか$#$$#$かんが$#$$"
@@ -108,14 +112,14 @@
     },
     {
       "id": 14,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$やめましょう。はい$", "furiDSD": "$$" },
       "eng": { "free": "Let's stop. OK", "literal": "" },
       "desc": ""
     },
     {
       "id": 15,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$じゃあ、これにて$#$一週間$#$、$#$四月一日$#$から$#$四月七日$#$、$#$日付変$#$わって$#$八日$",
         "furiDSD": "$$#$いっしゅうかん$#$$#$しがつついたち$#$$#$しがつなのか$#$$#$ひづけか$#$$#$ようか$"
@@ -128,7 +132,7 @@
     },
     {
       "id": 16,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$こんなお$#$時間$#$までお$#$付$#$き$#$合$#$いいただきましてありがとうございました$",
         "furiDSD": "$$#$じかん$#$$#$つ$#$$#$あ$#$$"
@@ -141,14 +145,14 @@
     },
     {
       "id": 17,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$ありがとうございました$", "furiDSD": "$$" },
       "eng": { "free": "Thank you", "literal": "" },
       "desc": ""
     },
     {
       "id": 18,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$私達$#$はとても$#$幸$#$せ$#$者$#$です$",
         "furiDSD": "$わたしたち$#$$#$しあわ$#$$#$もの$#$$"
@@ -158,7 +162,7 @@
     },
     {
       "id": 19,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": {
         "fullDSD": "$本当$#$に$#$幸$#$せ$#$者$#$です。ありがとう$",
         "furiDSD": "$ほんとう$#$$#$しあわ$#$$#$もの$#$$"
@@ -168,7 +172,7 @@
     },
     {
       "id": 20,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$良$#$い$#$夢見$#$てください。おやすみー！またねー！$",
         "furiDSD": "$よ$#$$#$ゆめみ$#$$"
@@ -181,28 +185,28 @@
     },
     {
       "id": 21,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$おやすみなさーい。またねー$", "furiDSD": "$$" },
       "eng": { "free": "Good night. See you", "literal": "" },
       "desc": ""
     },
     {
       "id": 22,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$おやすみー！ばいばーい！$", "furiDSD": "$$" },
       "eng": { "free": "Good night! Bye bye!", "literal": "" },
       "desc": ""
     },
     {
       "id": 23,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$ばいばーい$", "furiDSD": "$$" },
       "eng": { "free": "Bye bye", "literal": "" },
       "desc": ""
     },
     {
       "id": 24,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$ひょひょひょひょい…（$#$体$#$を$#$揺$#$らしながら）$",
         "furiDSD": "$$#$からだ$#$$#$ゆ$#$$"
@@ -215,7 +219,7 @@
     },
     {
       "id": 25,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": {
         "fullDSD": "$ひょひょひょひょい…（$#$体$#$を$#$揺$#$らしながら）$",
         "furiDSD": "$$#$からだ$#$$#$ゆ$#$$"
@@ -228,7 +232,7 @@
     },
     {
       "id": 26,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$概要欄見$#$た？$",
         "furiDSD": "$がいようらんみ$#$$"
@@ -238,14 +242,14 @@
     },
     {
       "id": 27,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$何書$#$いたの?$", "furiDSD": "$なにか$#$$" },
       "eng": { "free": "What did you write?", "literal": "" },
       "desc": ""
     },
     {
       "id": 28,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$読$#$み$#$上$#$げてあげましょう$",
         "furiDSD": "$よ$#$$#$あ$#$$"
@@ -255,14 +259,14 @@
     },
     {
       "id": 29,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$いいよ$", "furiDSD": "$$" },
       "eng": { "free": "OK", "literal": "" },
       "desc": ""
     },
     {
       "id": 30,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$長$#$かったようで$#$短$#$かった$#$一週間$",
         "furiDSD": "$なが$#$$#$みじか$#$$#$いっしゅうかん$"
@@ -275,7 +279,7 @@
     },
     {
       "id": 31,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$十年来$#$の$#$友人$#$とはいえ$#$他人$",
         "furiDSD": "$じゅうねんらい$#$$#$ゆうじん$#$$#$たにん$"
@@ -288,7 +292,7 @@
     },
     {
       "id": 32,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$うまくいかないことも$#$一$#$つくらいはあると$#$思$#$ってたけど$",
         "furiDSD": "$$#$ひと$#$$#$おも$#$$"
@@ -301,7 +305,7 @@
     },
     {
       "id": 33,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$楽$#$しいことしかない$#$夢$#$のような$#$一週間$#$でし$",
         "furiDSD": "$たの$#$$#$ゆめ$#$$#$いっしゅうかん$#$$"
@@ -314,14 +318,14 @@
     },
     {
       "id": 34,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$うん$", "furiDSD": "$$" },
       "eng": { "free": "Mm", "literal": "" },
       "desc": ""
     },
     {
       "id": 35,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": {
         "fullDSD": "$アンジュ$#$一週間本当$#$にありがとう…😢$",
         "furiDSD": "$$#$いっしゅうかんほんとう$#$$"
@@ -334,21 +338,21 @@
     },
     {
       "id": 36,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$もうやめー…！$", "furiDSD": "$$" },
       "eng": { "free": "Nooo...!", "literal": "" },
       "desc": "She means やめて like \"Don't start crying...!\""
     },
     {
       "id": 37,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$😭$", "furiDSD": "$$" },
       "eng": { "free": "😭", "literal": "" },
       "desc": ""
     },
     {
       "id": 38,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": {
         "fullDSD": "$なんだよ！ボケあるのかと$#$思$#$った！もうやめろよ！😂$",
         "furiDSD": "$$#$おも$#$$"
@@ -361,21 +365,21 @@
     },
     {
       "id": 39,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$なんだよ！？😂$", "furiDSD": "$$" },
       "eng": { "free": "Whaaat!? 😂", "literal": "" },
       "desc": ""
     },
     {
       "id": 40,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$えーん😂$", "furiDSD": "$$" },
       "eng": { "free": "Eeen 😂", "literal": "" },
       "desc": "Kids in manga often cry like this.\nBut no one does in real life.\nThis fact makes her cuter."
     },
     {
       "id": 41,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": {
         "fullDSD": "$「えーん」じゃない！もう$#$終$#$われ$#$終$#$われ！😂$",
         "furiDSD": "$$#$お$#$$#$お$#$$"
@@ -385,14 +389,14 @@
     },
     {
       "id": 42,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$おやしゅみー…😭$", "furiDSD": "$$" },
       "eng": { "free": "Goot nighd...😭", "literal": "" },
       "desc": "She crys too hard to say おやすみ properly."
     },
     {
       "id": 43,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": {
         "fullDSD": "$終$#$わって$#$終$#$わって！😅$",
         "furiDSD": "$お$#$$#$お$#$$"
@@ -402,14 +406,14 @@
     },
     {
       "id": 44,
-      "name": "Lize",
+      "personName": "Lize",
       "jpn": { "fullDSD": "$おやふみ…😭$", "furiDSD": "$$" },
       "eng": { "free": "Goot nighd...😭", "literal": "" },
       "desc": "おやすみ…"
     },
     {
       "id": 45,
-      "name": "Ange",
+      "personName": "Ange",
       "jpn": { "fullDSD": "$なんだよ！ボケるのかと$", "furiDSD": "$$" },
       "eng": { "free": "What was that!? I thought you jok-", "literal": "" },
       "desc": "The stream ended before Ange say something fully."

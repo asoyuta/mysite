@@ -73,49 +73,89 @@ body {
   margin: auto;
 }
 
+////////////////////* Line *////////////////////
+
+.line-first {
+  display: flex;
+  flex-direction: row-reverse;
+  img {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+.line-second {
+  display: flex;
+  img {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
 ////////////////////* Speech Bubble *////////////////////
 
-.bubble-wrapper {
-  .speech-bubble {
-    position: relative;
-    display: inline-block;
-    margin: 10px 30px;
-    padding: 12px 30px;
-    background: #e0edff;
-    border-radius: 15px;
+.speech-bubble-first {
+  position: relative;
+  display: inline-block;
+  margin: 10px 30px;
+  padding: 12px 30px;
+  background: #a5ffc3;
+  border-radius: 15px;
 
-    ::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: -30px;
-      margin-top: -15px;
-      border: 15px solid transparent;
-      border-right: 15px solid #e0edff;
-    }
+  ::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #a5ffc3;
+  }
+}
 
-    .bubble-content {
-      margin: 5px;
+.speech-bubble-second {
+  position: relative;
+  display: inline-block;
+  margin: 10px 30px;
+  padding: 12px 30px;
+  background: #e0edff;
+  border-radius: 15px;
 
-      .jpn-line {
-        font-size: 20px;
-        color: rgb(0, 0, 0);
+  ::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+}
+
+.bubble-content {
+  margin: 5px;
+
+  .jpn-line {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 3px 3px;
+    ruby {
+      rt {
+        font-size: 10px;
         text-align: center;
-        margin: 3px 3px;
-        ruby {
-          rt {
-            font-size: 10px;
-            text-align: center;
-          }
-        }
-      }
-
-      .eng-line {
-        font-size: 16px;
-        color: rgb(73, 73, 73);
-        margin: 3px;
-        text-align: center;
       }
     }
+  }
+
+  .eng-line {
+    font-size: 16px;
+    color: rgb(73, 73, 73);
+    margin: 3px;
+    text-align: center;
   }
 }

@@ -1,5 +1,5 @@
 import { Fragment } from "react"
-import { Jpn } from "../pages/data"
+import { Jpn } from "../index.d"
 
 const Furigana = (jpn: Jpn) => {
   const { fullDSD, furiDSD } = jpn
