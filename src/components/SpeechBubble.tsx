@@ -1,11 +1,11 @@
 import { Furigana } from './index'
-import { PersonLineInfos } from '../index.d';
+import { PersonLineInfos } from '../index.d'
 
 const SpeechBubble = (personLineInfos: PersonLineInfos) => {
   const { personInfo, lineInfo } = personLineInfos
 
   return (
-    <div className={"speech-bubble-" + personInfo.person}>
+    <div className={'speech-bubble-' + personInfo.person}>
       {console.log(personInfo.person)}
       <div className="bubble-content">
         <div className="jpn-line">
@@ -15,6 +15,7 @@ const SpeechBubble = (personLineInfos: PersonLineInfos) => {
           />
         </div>
         <p className="eng-line">{lineInfo.eng.free}</p>
+        {/* {lineInfo.desc && <div className="description">{lineInfo.desc}</div>} */}
       </div>
     </div>
   )
