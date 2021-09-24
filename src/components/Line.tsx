@@ -1,13 +1,25 @@
 import { SpeechBubble } from './index'
-import { PersonLineInfos } from '../index.d'
+import { PersonInfo, LineInfo } from '../index.d'
 
-const Line = (personLineInfos: PersonLineInfos) => {
-  const { personInfo, lineInfo } = personLineInfos
+type Props = {
+  personInfo: PersonInfo
+  lineInfo: LineInfo
+  furi: boolean
+  tran: boolean
+  firstPerson: string
+}
 
+const Line = ({ personInfo, lineInfo, furi, tran, firstPerson }: Props) => {
   return (
-    <div className={"line-" + personInfo.person}>
+    <div className={`line-${firstPerson === personInfo.name ? "first" : "second"}`}>
       <img src={personInfo.src} alt="icon" />
-      <SpeechBubble personInfo={personInfo} lineInfo={lineInfo} />
+      <SpeechBubble
+        personInfo={personInfo}
+        lineInfo={lineInfo}
+        furi={furi}
+        tran={tran}
+        firstPerson={firstPerson}
+      />
     </div>
   )
 }

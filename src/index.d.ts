@@ -1,20 +1,19 @@
-export interface Jpn {
+export type Jpn = {
   fullDSD: string
   furiDSD: string
 }
 
-export interface Eng {
+export type Eng = {
   free: string
   literal?: string
 }
 
-export interface PersonInfo {
+export type PersonInfo = {
   name: string
   src: string
-  person: string
 }
 
-export interface LineInfo {
+export type LineInfo = {
   id: number
   personName: string
   jpn: Jpn
@@ -22,12 +21,15 @@ export interface LineInfo {
   desc?: string
 }
 
-export interface PersonLineInfos {
-  personInfo: PersonInfo
-  lineInfo: LineInfo
+export type MainInfo = {
+  id: number
+  title: string
+  date: string
+  url: string
 }
 
-export interface Data {
+export type Data = {
+  mainInfo: MainInfo
   personInfoList: PersonInfo[]
   lineInfoList: LineInfo[]
 }

@@ -1,7 +1,13 @@
 {
+  "mainInfo": {
+    "id": 0,
+    "title": "End of Lize An Week",
+    "date": "2019-07-07T15:00:00.000Z",
+    "url": "https://youtu.be/uvs93XVfK4U"
+  },
   "personInfoList": [
-    { "name": "Ange", "src": "", "person": "" },
-    { "name": "Lize", "src": "", "person": "" }
+    { "name": "Lize", "src": "" },
+    { "name": "Ange", "src": "" }
   ],
   "lineInfoList": [
     {

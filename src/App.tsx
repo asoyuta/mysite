@@ -1,11 +1,15 @@
-import { Header, Dialogue } from "./components"
-import { Data } from './index.d';
+import { Article, Header } from './components'
+import { Data } from './index.d'
 
-const App = (data: Data) => {
+const App = ({ lineInfoList, personInfoList, mainInfo }: Data) => {
   return (
     <body>
       <Header />
-      <Dialogue lineInfoList={data.lineInfoList} personInfoList={data.personInfoList}/>
+      <Article
+        mainInfo={mainInfo}
+        personInfoList={personInfoList}
+        lineInfoList={lineInfoList}
+      />
     </body>
   )
 }

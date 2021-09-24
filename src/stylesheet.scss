@@ -21,27 +21,32 @@ $shadowColor: rgba(0, 0, 0, 0.589);
 ////////////////////* body *////////////////////
 
 body {
-  background-color: rgb(252, 255, 236);
-  font-family: 'Arial', 'メイリオ';
+  background-color: rgb(240, 240, 240);
+  font-family: 'Arial', 'メイリオ', sans-serif;
 }
 
 ////////////////////* Header *////////////////////
 
 .header {
+  width: 100%;
   height: 48px;
   background-color: $backgroundColor;
   box-shadow: 0 1px 3px $shadowColor;
+  margin-bottom: 30px;
 
   .header-logo {
     float: left;
-    background-color: $fontColor;
     transition-duration: 0.3s;
+    background-color: $fontColor;
+    color: $backgroundColor;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    vertical-align: middle;
 
     span {
-      vertical-align: middle;
-      color: $backgroundColor;
       font-size: 30px;
-      padding: 9px 10px;
+      font-weight: bolder;
     }
 
     &:hover {
@@ -51,26 +56,63 @@ body {
   }
 
   .header-list {
-    li {
-      list-style: none;
-      float: left;
-      padding: 12px 10px;
-    }
+    display: flex;
 
     a {
+      font-size: 18px;
       color: $fontColor;
       text-decoration: none;
+      padding: 14px 14px;
     }
   }
 }
 
-////////////////////* Dialogue *////////////////////
+////////////////////* Article *////////////////////
 
-.dialogue {
-  padding: 20px;
-  background-color: #92b8ff;
-  width: 60%;
+.article {
+  background-color: white;
   margin: auto;
+  width: 70%;
+  box-shadow: 0 0 2px $shadowColor;
+  overflow: hidden;
+  .title {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px;
+  }
+  .dialogue {
+    width: 85%;
+    border: 30px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    margin: auto;
+    background-color: black;
+    .buttons {
+      text-align: right;
+      margin-right: 50px;
+      background-color: black;
+      button {
+        background-color: white;
+        padding: 5px 12px;
+        border: 1px solid black;
+        cursor: pointer;
+        border-radius: 3px;
+        box-shadow: 0 2px black;
+        margin: 3px;
+        &:active {
+          position: relative;
+          top: 2px;
+          box-shadow: none;
+        }
+      }
+    }
+    .chat {
+      padding: 20px;
+      border-radius: 30px;
+      background-color: #92b8ff;
+      height: 1000px;
+      overflow: auto;
+    }
+  }
 }
 
 ////////////////////* Line *////////////////////
@@ -78,6 +120,7 @@ body {
 .line-first {
   display: flex;
   flex-direction: row-reverse;
+  margin-bottom: 10px;
   img {
     width: 100px;
     height: 100px;
@@ -88,6 +131,7 @@ body {
 
 .line-second {
   display: flex;
+  margin-bottom: 10px;
   img {
     width: 100px;
     height: 100px;
@@ -100,50 +144,69 @@ body {
 
 .speech-bubble-first {
   position: relative;
-  display: inline-block;
   margin: 10px 30px;
   padding: 12px 30px;
-  background: #a5ffc3;
+  background: #61ff96;
   border-radius: 15px;
-
-  ::before {
-    content: "";
+  text-align: center;
+  &:before {
+    content: '';
     position: absolute;
-    top: 50%;
+    top: 42px;
     left: 100%;
     margin-top: -15px;
     border: 15px solid transparent;
-    border-left: 15px solid #a5ffc3;
+    border-left: 15px solid #61ff96;
+  }
+  button {
+    background-color: transparent;
+    padding: 5px 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 2px black;
+    &:active {
+      position: relative;
+      top: 2px;
+      box-shadow: none;
+    }
   }
 }
 
 .speech-bubble-second {
   position: relative;
-  display: inline-block;
   margin: 10px 30px;
   padding: 12px 30px;
-  background: #e0edff;
+  background: #ffffff;
   border-radius: 15px;
-
-  ::before {
+  text-align: center;
+  &:before {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 42px;
     left: -30px;
     margin-top: -15px;
     border: 15px solid transparent;
-    border-right: 15px solid #e0edff;
+    border-right: 15px solid #ffffff;
+  }
+  button {
+    background-color: transparent;
+    padding: 5px 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 2px black;
+    &:active {
+      position: relative;
+      top: 2px;
+      box-shadow: none;
+    }
   }
 }
 
 .bubble-content {
-  margin: 5px;
-
   .jpn-line {
-    font-size: 18px;
-    color: rgb(0, 0, 0);
     text-align: center;
-    margin: 3px 3px;
     ruby {
       rt {
         font-size: 10px;
@@ -153,9 +216,26 @@ body {
   }
 
   .eng-line {
-    font-size: 16px;
-    color: rgb(73, 73, 73);
-    margin: 3px;
     text-align: center;
+    margin: 3px 0;
+  }
+}
+
+.detail {
+  margin-top: 8px;
+  .literal {
+    text-align: center;
+    .literal-text {
+      margin-bottom: 8px;
+    }
+  }
+  .desc {
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    .desc-text {
+      font-size: 15px;
+    }
   }
 }
