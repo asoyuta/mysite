@@ -6,18 +6,6 @@
   padding: 0;
 }
 
-////////////////////* color mode *////////////////////
-
-// White Mode
-$backgroundColor: #fff;
-$fontColor: #2b546a;
-$shadowColor: rgba(0, 0, 0, 0.589);
-
-// Dark Mode
-// $backgroundColor: #2b546a;
-// $fontColor: #fff;
-// $shadowColor: rgba(255, 255, 255, 0.589);
-
 ////////////////////* body *////////////////////
 
 body {
@@ -25,20 +13,68 @@ body {
   font-family: 'Arial', 'メイリオ', sans-serif;
 }
 
+////////////////////* body *////////////////////
+
+.button {
+  padding: 5px 12px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px black;
+  margin: auto;
+  &:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+  }
+}
+
+////////////////////* Toggle *////////////////////
+
+.toggle {
+  height: 22px;
+  width: 44px;
+  border-radius: 50px;
+  background-color: rgb(150, 150, 150);
+  border: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+}
+
+.toggle.on {
+  background-color: rgb(0, 226, 30);
+}
+
+.notch {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s ease;
+}
+
+.on > .notch {
+  transform: translate(22px, 0);
+}
+
 ////////////////////* Header *////////////////////
 
 .header {
   width: 100%;
   height: 48px;
-  background-color: $backgroundColor;
-  box-shadow: 0 1px 3px $shadowColor;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.589);
   margin-bottom: 30px;
 
   .header-logo {
     float: left;
     transition-duration: 0.3s;
-    background-color: $fontColor;
-    color: $backgroundColor;
+    background-color: #2b546a;
+    color: #fff;
     height: 48px;
     width: 48px;
     text-align: center;
@@ -60,7 +96,7 @@ body {
 
     a {
       font-size: 18px;
-      color: $fontColor;
+      color: #2b546a;
       text-decoration: none;
       padding: 14px 14px;
     }
@@ -73,35 +109,52 @@ body {
   background-color: white;
   margin: auto;
   width: 70%;
-  box-shadow: 0 0 2px $shadowColor;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.589);
   overflow: hidden;
+  padding: 30px 0;
   .title {
     font-size: 40px;
     text-align: center;
-    margin: 30px;
+    margin-bottom: 30px;
   }
   .dialogue {
     width: 85%;
     border: 30px solid rgb(0, 0, 0);
     border-radius: 30px;
     margin: auto;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     .buttons {
-      text-align: right;
-      margin-right: 50px;
-      background-color: black;
-      button {
-        background-color: white;
-        padding: 5px 12px;
-        border: 1px solid black;
-        cursor: pointer;
-        border-radius: 3px;
-        box-shadow: 0 2px black;
-        margin: 3px;
-        &:active {
-          position: relative;
-          top: 2px;
-          box-shadow: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 10px;
+      color: white;
+      .furi-tran {
+        text-align: center;
+        margin-right: 20px;
+        p {
+          margin-bottom: 10px;
+        }
+      }
+      .person {
+        text-align: center;
+        margin-right: 30px;
+        p {
+          margin-bottom: 5px;
+        }
+        .person-button {
+          background-color: black;
+          color: white;
+          padding: 5px 12px;
+          border: 1px solid rgb(255, 255, 255);
+          cursor: pointer;
+          border-radius: 3px;
+          box-shadow: 0 2px rgb(255, 255, 255);
+          &:active {
+            position: relative;
+            top: 2px;
+            box-shadow: none;
+          }
         }
       }
     }
@@ -109,7 +162,7 @@ body {
       padding: 20px;
       border-radius: 30px;
       background-color: #92b8ff;
-      height: 1000px;
+      height: 800px;
       overflow: auto;
     }
   }
@@ -144,72 +197,49 @@ body {
 
 .speech-bubble-first {
   position: relative;
-  margin: 10px 30px;
+  margin: 40px 30px auto 0;
   padding: 12px 30px;
   background: #61ff96;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   &:before {
     content: '';
     position: absolute;
-    top: 42px;
     left: 100%;
-    margin-top: -15px;
-    border: 15px solid transparent;
-    border-left: 15px solid #61ff96;
+    border-top: 10px solid #61ff96;
+    border-right: 10px solid transparent;
   }
-  button {
+  .detail-button {
     background-color: transparent;
-    padding: 5px 12px;
-    border: 1px solid black;
-    cursor: pointer;
-    border-radius: 3px;
-    box-shadow: 0 2px black;
-    &:active {
-      position: relative;
-      top: 2px;
-      box-shadow: none;
-    }
   }
 }
 
 .speech-bubble-second {
   position: relative;
-  margin: 10px 30px;
+  margin: 40px 0 auto 30px;
   padding: 12px 30px;
   background: #ffffff;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   &:before {
     content: '';
     position: absolute;
-    top: 42px;
-    left: -30px;
-    margin-top: -15px;
-    border: 15px solid transparent;
-    border-right: 15px solid #ffffff;
+    left: -10px;
+    border-top: 10px solid #ffffff;
+    border-left: 10px solid transparent;
   }
-  button {
+  .detail-button {
     background-color: transparent;
-    padding: 5px 12px;
-    border: 1px solid black;
-    cursor: pointer;
-    border-radius: 3px;
-    box-shadow: 0 2px black;
-    &:active {
-      position: relative;
-      top: 2px;
-      box-shadow: none;
-    }
   }
 }
 
 .bubble-content {
+  margin-top: 5px;
   .jpn-line {
     text-align: center;
+    margin-bottom: 5px;
     ruby {
       rt {
-        font-size: 10px;
         text-align: center;
       }
     }
@@ -217,16 +247,16 @@ body {
 
   .eng-line {
     text-align: center;
-    margin: 3px 0;
+    margin-bottom: 5px;
   }
 }
 
 .detail {
-  margin-top: 8px;
+  margin-top: 7px;
   .literal {
     text-align: center;
     .literal-text {
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
   }
   .desc {
@@ -234,6 +264,7 @@ body {
     border: 1px solid black;
     border-radius: 5px;
     padding: 8px;
+    margin-bottom: 5px;
     .desc-text {
       font-size: 15px;
     }

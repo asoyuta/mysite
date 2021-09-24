@@ -1,6 +1,5 @@
 import data from './data.json'
 import App from '../../App'
-import { Fragment } from 'react'
 
 const { mainInfo, lineInfoList, personInfoList } = data
 
@@ -11,13 +10,11 @@ for (let i = 0; i < personInfoList.length; i++) {
 
 const Page0000 = () => {
   return (
-    <Fragment>
-      <App
-        mainInfo={mainInfo}
-        lineInfoList={lineInfoList}
-        personInfoList={personInfoList}
-      />
-    </Fragment>
+    <App
+      mainInfo={mainInfo}
+      lineInfoList={lineInfoList}
+      personInfoList={personInfoList}
+    />
   )
 }
 

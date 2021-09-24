@@ -1,0 +1,196 @@
+{
+  "mainInfo": {
+    "id": 1,
+    "title": "Himawari got pregnant!?",
+    "date": "2019-10-17T15:00:00.000Z",
+    "url": "https://youtu.be/VvpSJAPlTsA"
+  },
+  "personInfoList": [
+    { "name": "Himawari", "src": "", "person": "" },
+    { "name": "Kuzuha", "src": "", "person": "" },
+    { "name": "Yashiro", "src": "", "person": "" }
+  ],
+  "lineInfoList": [
+    {
+      "id": 0,
+      "personName": "Himawari",
+      "jpn": { "fullDSD": "$よいしょー$", "furiDSD": "$$" },
+      "eng": { "free": "Yoisho", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 1,
+      "personName": "Kuzuha",
+      "jpn": { "fullDSD": "$しゃあー$", "furiDSD": "$$" },
+      "eng": { "free": "Shaaa", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 2,
+      "personName": "Himawari",
+      "jpn": { "fullDSD": "$あっ$", "furiDSD": "$$" },
+      "eng": { "free": "Ah", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 3,
+      "personName": "Himawari",
+      "jpn": {
+        "fullDSD": "$「$#$出産$#$おめでとう」$",
+        "furiDSD": "$$#$しゅっさん$#$$"
+      },
+      "eng": { "free": "\"Congrats on your childbirth\"", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 4,
+      "personName": "Himawari",
+      "jpn": { "fullDSD": "$ありがとうございます$", "furiDSD": "$$" },
+      "eng": { "free": "Thank you", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 5,
+      "personName": "Kuzuha",
+      "jpn": { "fullDSD": "$…はぁ！？$", "furiDSD": "$$" },
+      "eng": { "free": "...Huh!?", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 6,
+      "personName": "Yashiro",
+      "jpn": { "fullDSD": "$へっ！？…えぇ！？😂$", "furiDSD": "$$" },
+      "eng": { "free": "Heh!? ...Eh!? 😂", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 7,
+      "personName": "Kuzuha",
+      "jpn": {
+        "fullDSD": "$ちょっと$#$待$#$って…😅$",
+        "furiDSD": "$$#$ま$#$$"
+      },
+      "eng": { "free": "Wait...😅", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 8,
+      "personName": "Yashiro",
+      "jpn": {
+        "fullDSD": "$ちょ、ちょっと$#$待$#$って、どういうこと！？$",
+        "furiDSD": "$$#$ま$#$$"
+      },
+      "eng": { "free": "Wa- wait, what do you mean!?", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 9,
+      "personName": "Kuzuha",
+      "jpn": { "fullDSD": "$いつの$#$間$#$に！？$", "furiDSD": "$$#$ま$#$$" },
+      "eng": {
+        "free": "When did you...!?",
+        "literal": "Before we knew it...!?"
+      },
+      "desc": ""
+    },
+    {
+      "id": 10,
+      "personName": "Yashiro",
+      "jpn": {
+        "fullDSD": "$いつの$#$間$#$にできた！？😂$",
+        "furiDSD": "$$#$ま$#$$"
+      },
+      "eng": {
+        "free": "When did you have them!? 😂",
+        "literal": "You had them before we knew it!? 😂"
+      },
+      "desc": ""
+    },
+    {
+      "id": 11,
+      "personName": "Himawari",
+      "jpn": {
+        "fullDSD": "$あー、なんかー、$#$昨日生$#$まれてー$",
+        "furiDSD": "$$#$きのうう$#$$"
+      },
+      "eng": { "free": "Ah, well, they're born yesterday", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 12,
+      "personName": "Yashiro",
+      "jpn": {
+        "fullDSD": "$あ、あとさらっ…さらっとジャンプマスター$#$渡$#$すな！😂$",
+        "furiDSD": "$$#$わた$#$$"
+      },
+      "eng": {
+        "free": "Hey, you... Don't pass me jumpmaster as if it's normal! 😂",
+        "literal": ""
+      },
+      "desc": "さらり means \"smooth\" or \"without hesitation or delay\".\nさらっと has the same meaning."
+    },
+    {
+      "id": 13,
+      "personName": "Kuzuha",
+      "jpn": {
+        "fullDSD": "$これはちょっとジャンプマスターしてらんないわ$",
+        "furiDSD": "$$"
+      },
+      "eng": {
+        "free": "I can't afford to be jumpmaster in this case",
+        "literal": ""
+      },
+      "desc": ""
+    },
+    {
+      "id": 14,
+      "personName": "Himawari",
+      "jpn": {
+        "fullDSD": "$なんかねー、$#$昨日生$#$まれてー$",
+        "furiDSD": "$$#$きのうう$#$$"
+      },
+      "eng": { "free": "Well, they were born yesterday", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 15,
+      "personName": "Kuzuha",
+      "jpn": { "fullDSD": "$えぇ！？$", "furiDSD": "$$" },
+      "eng": { "free": "Eh!?", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 16,
+      "personName": "Himawari",
+      "jpn": {
+        "fullDSD": "$なんか$#$一昨日$#$に$#$祈願$#$…$#$安産祈願貰$#$ったんだよ、みんなに$",
+        "furiDSD": "$$#$おとつい$#$$#$きがん$#$$#$あんざんきがんもら$#$$"
+      },
+      "eng": {
+        "free": "Well, two days ago, they gave me prayer... everyone gave me prayer for safe childbirth",
+        "literal": ""
+      },
+      "desc": "In standard Japanese 一昨日 is read as おととい.\nBut people in Kansai region like Himwari read it as おとつい.\n\n安産祈願 means \"prayer for safe childbirth\" so it's not something you can give or be given.\nFans gave her comments and superchats of 安産祈願.\nSearch images of Japanese lucky charms.\nCharms of prayer for safe childbirth is one of many."
+    },
+    {
+      "id": 17,
+      "personName": "Kuzuha",
+      "jpn": {
+        "fullDSD": "$名前何$#$に$#$す$#$んの？$",
+        "furiDSD": "$なまえなに$#$$#$す$#$$"
+      },
+      "eng": { "free": "", "literal": "" },
+      "desc": ""
+    },
+    {
+      "id": 18,
+      "personName": "Himawari",
+      "jpn": {
+        "fullDSD": "$名前$#$ねー、$#$三$#$…いるから、$#$三$#$いるから$",
+        "furiDSD": "$なまえ$#$$#$さん$#$$#$さん$#$$"
+      },
+      "eng": { "free": "", "literal": "" },
+      "desc": "Normally, people say 三人(さんにん) when they count three people.\nAnd people say 三匹(さんひき) when they count three dogs.\nBut Himawari said only 三(さん)... this is not normal.\nBecause of her unnatural wording, two of them will keep misunderstanding...\nIt's miracle..."
+    }
+  ]
+}

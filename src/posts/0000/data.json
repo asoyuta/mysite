@@ -6,8 +6,8 @@
     "url": "https://youtu.be/uvs93XVfK4U"
   },
   "personInfoList": [
-    { "name": "Lize", "src": "" },
-    { "name": "Ange", "src": "" }
+    { "name": "Ange", "src": "", "person": "" },
+    { "name": "Lize", "src": "", "person": "" }
   ],
   "lineInfoList": [
     {
@@ -21,14 +21,14 @@
         "free": "Well, it's time to say goodbye.",
         "literal": "Well then, this time, it's time to say goodbye, really."
       },
-      "desc": "ほんと"
+      "desc": "She pronounce ほんと but ほんとう is correct."
     },
     {
       "id": 2,
       "personName": "Ange",
       "jpn": { "fullDSD": "$終$#$わりかぁ…やばぁ…$", "furiDSD": "$お$#$$" },
       "eng": { "free": "It's ending... Ah...", "literal": "" },
-      "desc": "やばい"
+      "desc": "English has no equivalent to やばい."
     },
     {
       "id": 3,
@@ -52,7 +52,7 @@
       "personName": "Ange",
       "jpn": { "fullDSD": "$やばいなぁ…$", "furiDSD": "$$" },
       "eng": { "free": "I can't believe it...", "literal": "" },
-      "desc": "やばい"
+      "desc": "English has no equivalent to やばい."
     },
     {
       "id": 6,
@@ -134,7 +134,7 @@
         "free": "Then, this whole week, since April 1st, until April 7th, the date has changed, 8th",
         "literal": ""
       },
-      "desc": "She realized the date has changed after saying 7th, so she said 8th.\nWe can read 一日 as いちにち, 七日 as しちにち or ななにち, 八日 as はちにち.\nBut ついたち, なのか, ようか are more formal."
+      "desc": "She realized the date has changed after saying 7th, so she said 8th.\nWe can read 一日 as いちにち, 七日 as しちにち or ななにち, 八日 as はちにち.\nBut ついたち, なのか, ようか are more appropriate."
     },
     {
       "id": 16,
@@ -174,7 +174,7 @@
         "furiDSD": "$ほんとう$#$$#$しあわ$#$$#$もの$#$$"
       },
       "eng": { "free": "We really are blessed. Thank you", "literal": "" },
-      "desc": "ほんと"
+      "desc": "She pronounce ほんと but ほんとう is correct."
     },
     {
       "id": 20,
@@ -340,7 +340,7 @@
         "free": "Ange, thank you so much for the week...😢",
         "literal": ""
       },
-      "desc": "ほんと"
+      "desc": "She pronounce ほんと but ほんとう is correct."
     },
     {
       "id": 36,
@@ -415,13 +415,13 @@
       "personName": "Lize",
       "jpn": { "fullDSD": "$おやふみ…😭$", "furiDSD": "$$" },
       "eng": { "free": "Goot nighd...😭", "literal": "" },
-      "desc": "おやすみ…"
+      "desc": "She crys too hard to say おやすみ properly."
     },
     {
       "id": 45,
       "personName": "Ange",
       "jpn": { "fullDSD": "$なんだよ！ボケるのかと$", "furiDSD": "$$" },
-      "eng": { "free": "What was that!? I thought you jok-", "literal": "" },
+      "eng": { "free": "What was that!? I thought you'd jok-", "literal": "" },
       "desc": "The stream ended before Ange say something fully."
     }
   ]

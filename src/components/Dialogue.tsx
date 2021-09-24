@@ -1,4 +1,4 @@
-import { Line } from './index'
+import { Line, Toggle, Button } from './index'
 import { PersonInfo, LineInfo } from '../index.d'
 import { useState } from 'react'
 
@@ -15,7 +15,7 @@ const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
   const toggleFuri = () => {
     setFuri((prevState) => !prevState)
   }
-  const toggleTl = () => {
+  const toggleTran = () => {
     setTran((prevState) => !prevState)
   }
   const nextName = () => {
@@ -25,13 +25,18 @@ const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
   return (
     <div className="dialogue">
       <div className="buttons">
-        <button onClick={() => nextName()}>{"First person: " + personInfoList[first].name}</button>
-        <button onClick={() => toggleFuri()}>
-          {furi ? 'Turn OFF Furigana' : 'Turn ON Furigana'}
-        </button>
-        <button onClick={() => toggleTl()}>
-          {tran ? 'Turn OFF Translation' : 'Turn ON Translation'}
-        </button>
+        <div className="furi-tran">
+          <p>Furigana</p>
+          <Toggle toggled={furi} onClick={() => toggleFuri()} />
+        </div>
+        <div className="furi-tran">
+          <p>Translation</p>
+          <Toggle toggled={tran} onClick={() => toggleTran()} />
+        </div>
+        <div className="person">
+          <p>First Person</p>
+          <Button value={personInfoList[first].name} onClick={() => nextName()} className='person-button'/>
+        </div>
       </div>
       <div className="chat">
         {lineInfoList.map((lineInfo) => (

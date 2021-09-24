@@ -1,4 +1,4 @@
-import { Furigana } from './index'
+import { Furigana, Button } from './index'
 import { PersonInfo, LineInfo } from '../index.d'
 import { useState } from 'react'
 
@@ -10,7 +10,13 @@ type Props = {
   firstPerson: string
 }
 
-const SpeechBubble = ({ personInfo, lineInfo, furi, tran, firstPerson }: Props) => {
+const SpeechBubble = ({
+  personInfo,
+  lineInfo,
+  furi,
+  tran,
+  firstPerson,
+}: Props) => {
   const [show, setShow] = useState(false)
 
   const toggle = () => {
@@ -20,7 +26,11 @@ const SpeechBubble = ({ personInfo, lineInfo, furi, tran, firstPerson }: Props) 
   const descList = lineInfo.desc?.split('\n')
 
   return (
-    <div className={`speech-bubble-${firstPerson === personInfo.name ? "first" : "second"}`}>
+    <div
+      className={`speech-bubble-${
+        firstPerson === personInfo.name ? 'first' : 'second'
+      }`}
+    >
       <div className="bubble-content">
         <div className="jpn-line">
           <Furigana
@@ -30,11 +40,12 @@ const SpeechBubble = ({ personInfo, lineInfo, furi, tran, firstPerson }: Props) 
           />
         </div>
         {tran ? <p className="eng-line">{lineInfo.eng.free}</p> : null}
-
         {lineInfo.desc || lineInfo.eng.literal ? (
-          <button onClick={() => toggle()}>
-            {show ? 'Close details' : 'Open details'}
-          </button>
+          <Button
+            value={show ? 'Close details' : 'Open details'}
+            onClick={toggle}
+            className="detail-button"
+          />
         ) : null}
         {show ? (
           <div className="detail">
