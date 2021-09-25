@@ -1,16 +1,19 @@
-import { Article, Header } from './components'
-import { Data } from './index.d'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import ArticlePage from './pages/ArticlePage'
 
-const App = ({ lineInfoList, personInfoList, mainInfo }: Data) => {
+const App = () => {
   return (
-    <body>
-      <Header />
-      <Article
-        mainInfo={mainInfo}
-        personInfoList={personInfoList}
-        lineInfoList={lineInfoList}
-      />
-    </body>
+    <BrowserRouter>
+      <div className="App">
+        <div className="content">
+          <Switch>
+            <Route path="/article/:id">
+              <ArticlePage />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </BrowserRouter>
   )
 }
 
