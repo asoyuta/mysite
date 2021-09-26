@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { Article, Header } from '../components'
+import { Article } from '../components'
 
 type Pram = {
   id: string
@@ -13,18 +13,15 @@ const ArticlePage = () => {
 
   for (let i = 0; i < personInfoList.length; i++) {
     personInfoList[i].src =
-      require(`../img/${personInfoList[i].name}.png`).default
+      require(`../img/livers/${personInfoList[i].name}.png`).default
   }
 
   return (
-    <>
-      <Header />
-      <Article
-        mainInfo={mainInfo}
-        personInfoList={personInfoList}
-        lineInfoList={lineInfoList}
-      />
-    </>
+    <Article
+      mainInfo={mainInfo}
+      personInfoList={personInfoList}
+      lineInfoList={lineInfoList}
+    />
   )
 }
 

@@ -63,27 +63,18 @@ body {
 
 ////////////////////* Header *////////////////////
 
-.header {
+header {
   width: 100%;
   height: 48px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.589);
   margin-bottom: 30px;
 
-  .header-logo {
+  img {
+    margin: 6px 50px 4px 50px;
     float: left;
     transition-duration: 0.3s;
-    background-color: #2b546a;
-    color: #fff;
-    height: 48px;
-    width: 48px;
-    text-align: center;
-    vertical-align: middle;
-
-    span {
-      font-size: 30px;
-      font-weight: bolder;
-    }
+    height: 38px;
 
     &:hover {
       opacity: 0.9;
