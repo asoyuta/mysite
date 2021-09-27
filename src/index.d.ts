@@ -28,13 +28,14 @@ export type MainInfo = {
   url: string
 }
 
-export type Data = {
+export type Article = {
   mainInfo: MainInfo
   personInfoList: PersonInfo[]
   lineInfoList: LineInfo[]
 }
 
 declare module '*.json' {
-  const data: Data
-  export = data
+  const article: Article
+  const articles: Article[]
+  export = article | articles
 }

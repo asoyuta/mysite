@@ -1,5 +1,6 @@
 import { Dialogue, Title } from './index'
 import { useParams } from 'react-router-dom'
+import articles from '../JSON/all.json'
 
 type Pram = {
   id: string
@@ -8,8 +9,8 @@ type Pram = {
 const Article = () => {
   const { id } = useParams<Pram>()
 
-  const data = require(`../JSON/article/${id}.json`)
-  const { mainInfo, personInfoList, lineInfoList } = data
+  const article = articles[Number(id)]
+  const { mainInfo, personInfoList, lineInfoList } = article
 
   for (let i = 0; i < personInfoList.length; i++) {
     personInfoList[i].src =

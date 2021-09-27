@@ -54,6 +54,7 @@ const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
                     furiOn={furiOn}
                     tranOn={tranOn}
                     firstPerson={personInfoList[firstPersonId].name}
+                    key={lineInfo.id}
                   />
                 ),
             )}
