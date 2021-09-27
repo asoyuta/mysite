@@ -1,6 +1,6 @@
 import { Dialogue, Title } from './index'
 import { useParams } from 'react-router-dom'
-import articles from '../JSON/all.json'
+import data from '../data/db.json'
 
 type Pram = {
   id: string
@@ -9,6 +9,7 @@ type Pram = {
 const Article = () => {
   const { id } = useParams<Pram>()
 
+  const articles = data.articles
   const article = articles[Number(id)]
   const { mainInfo, personInfoList, lineInfoList } = article
 

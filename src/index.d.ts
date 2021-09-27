@@ -29,13 +29,17 @@ export type MainInfo = {
 }
 
 export type Article = {
+  id: number
   mainInfo: MainInfo
   personInfoList: PersonInfo[]
   lineInfoList: LineInfo[]
 }
 
+export type Data = {
+  articles: Article[]
+}
+
 declare module '*.json' {
-  const article: Article
-  const articles: Article[]
-  export = article | articles
+  const data: Data
+  export = data
 }
