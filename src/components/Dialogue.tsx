@@ -24,7 +24,7 @@ const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
 
   return (
     <div className="dialogue">
-      <div className="buttons">
+      <div className="settings">
         <div className="furi-tran">
           <p>Furigana</p>
           <Toggle toggled={furiOn} onClick={handleClickFuri} />
@@ -42,9 +42,9 @@ const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
           />
         </div>
       </div>
-      <div className="chat">
+      <div className="display">
         {lineInfoList.map((lineInfo) => (
-          <div className="line">
+          <>
             {personInfoList.map(
               (personInfo) =>
                 personInfo.name === lineInfo.personName && (
@@ -58,7 +58,7 @@ const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
                   />
                 ),
             )}
-          </div>
+          </>
         ))}
       </div>
     </div>

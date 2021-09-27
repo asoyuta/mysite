@@ -1,22 +1,14 @@
 import { Furigana, Button } from './index'
-import { PersonInfo, LineInfo } from '../index.d'
+import { LineInfo } from '../index.d'
 import { useState } from 'react'
 
 type Props = {
-  personInfo: PersonInfo
   lineInfo: LineInfo
   furiOn: boolean
   tranOn: boolean
-  firstPerson: string
 }
 
-const SpeechBubble = ({
-  personInfo,
-  lineInfo,
-  furiOn,
-  tranOn,
-  firstPerson,
-}: Props) => {
+const SpeechBubble = ({ lineInfo, furiOn, tranOn }: Props) => {
   const [show, setShow] = useState(false)
 
   const toggle = () => {
@@ -26,11 +18,7 @@ const SpeechBubble = ({
   const descList = lineInfo.desc?.split('\n')
 
   return (
-    <div
-      className={`speech-bubble-${
-        firstPerson === personInfo.name ? 'first' : 'second'
-      }`}
-    >
+    <div className="speech-bubble">
       <div className="bubble-content">
         <div className="jpn-line">
           <Furigana

@@ -11,15 +11,13 @@ type Props = {
 
 const Line = ({ personInfo, lineInfo, furiOn, tranOn, firstPerson }: Props) => {
   return (
-    <div className={`line-${firstPerson === personInfo.name ? "first" : "second"}`}>
+    <div
+      className={`line ${
+        firstPerson === personInfo.name ? 'line-first' : 'line-second'
+      }`}
+    >
       <img src={personInfo.src} alt="icon" />
-      <SpeechBubble
-        personInfo={personInfo}
-        lineInfo={lineInfo}
-        furiOn={furiOn}
-        tranOn={tranOn}
-        firstPerson={firstPerson}
-      />
+      <SpeechBubble lineInfo={lineInfo} furiOn={furiOn} tranOn={tranOn} />
     </div>
   )
 }
