@@ -8,18 +8,18 @@ type Props = {
 }
 
 const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
-  const [furi, setFuri] = useState(true)
-  const [tran, setTran] = useState(true)
-  const [first, setFirst] = useState(0)
+  const [furiOn, setFuriOn] = useState(true)
+  const [tranOn, setTranOn] = useState(true)
+  const [firstPersonId, setFirstPersonId] = useState(0)
 
-  const toggleFuri = () => {
-    setFuri((prevState) => !prevState)
+  const handleClickFuri = () => {
+    setFuriOn((prevState) => !prevState)
   }
-  const toggleTran = () => {
-    setTran((prevState) => !prevState)
+  const handleClickTran = () => {
+    setTranOn((prevState) => !prevState)
   }
-  const nextName = () => {
-    setFirst((prevState) => (prevState + 1) % personInfoList.length)
+  const handleClickFirstPersonId = () => {
+    setFirstPersonId((prevState) => (prevState + 1) % personInfoList.length)
   }
 
   return (
@@ -27,15 +27,19 @@ const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
       <div className="buttons">
         <div className="furi-tran">
           <p>Furigana</p>
-          <Toggle toggled={furi} onClick={() => toggleFuri()} />
+          <Toggle toggled={furiOn} onClick={handleClickFuri} />
         </div>
         <div className="furi-tran">
           <p>Translation</p>
-          <Toggle toggled={tran} onClick={() => toggleTran()} />
+          <Toggle toggled={tranOn} onClick={handleClickTran} />
         </div>
         <div className="person">
           <p>First Person</p>
-          <Button value={personInfoList[first].name} onClick={() => nextName()} className='person-button'/>
+          <Button
+            value={personInfoList[firstPersonId].name}
+            onClick={handleClickFirstPersonId}
+            className="person-button"
+          />
         </div>
       </div>
       <div className="chat">
@@ -47,9 +51,9 @@ const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
                   <Line
                     personInfo={personInfo}
                     lineInfo={lineInfo}
-                    furi={furi}
-                    tran={tran}
-                    firstPerson={personInfoList[first].name}
+                    furiOn={furiOn}
+                    tranOn={tranOn}
+                    firstPerson={personInfoList[firstPersonId].name}
                   />
                 ),
             )}

@@ -1,6 +1,5 @@
-import { Header } from 'components'
+import { Header, Article } from 'components'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import ArticlePage from './pages/ArticlePage'
 
 const App = () => {
   return (
@@ -10,7 +9,7 @@ const App = () => {
         <div className="content">
           <Switch>
             <Route path="/article/:id">
-              <ArticlePage />
+              <Article />
             </Route>
           </Switch>
         </div>

@@ -5,16 +5,16 @@ import { useState } from 'react'
 type Props = {
   personInfo: PersonInfo
   lineInfo: LineInfo
-  furi: boolean
-  tran: boolean
+  furiOn: boolean
+  tranOn: boolean
   firstPerson: string
 }
 
 const SpeechBubble = ({
   personInfo,
   lineInfo,
-  furi,
-  tran,
+  furiOn,
+  tranOn,
   firstPerson,
 }: Props) => {
   const [show, setShow] = useState(false)
@@ -36,10 +36,10 @@ const SpeechBubble = ({
           <Furigana
             fullDSD={lineInfo.jpn.fullDSD}
             furiDSD={lineInfo.jpn.furiDSD}
-            furi={furi}
+            furiOn={furiOn}
           />
         </div>
-        {tran ? <p className="eng-line">{lineInfo.eng.free}</p> : null}
+        {tranOn ? <p className="eng-line">{lineInfo.eng.free}</p> : null}
         {lineInfo.desc || lineInfo.eng.literal ? (
           <Button
             value={show ? 'Close details' : 'Open details'}

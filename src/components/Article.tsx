@@ -1,7 +1,21 @@
 import { Dialogue, Title } from './index'
-import { Data } from '../index.d'
+import { useParams } from 'react-router-dom'
 
-const Article = ({ lineInfoList, personInfoList, mainInfo }: Data) => {
+type Pram = {
+  id: string
+}
+
+const Article = () => {
+  const { id } = useParams<Pram>()
+
+  const data = require(`../JSON/article/${id}.json`)
+  const { mainInfo, personInfoList, lineInfoList } = data
+
+  for (let i = 0; i < personInfoList.length; i++) {
+    personInfoList[i].src =
+      require(`../img/livers/${personInfoList[i].name}.png`).default
+  }
+
   return (
     <div className="article">
       <Title title={mainInfo.title} />

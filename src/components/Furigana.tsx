@@ -1,10 +1,10 @@
 type Props = {
   fullDSD: string
   furiDSD: string
-  furi: boolean
+  furiOn: boolean
 }
 
-const Furigana = ({ fullDSD, furiDSD, furi }: Props) => {
+const Furigana = ({ fullDSD, furiDSD, furiOn }: Props) => {
   let fullD = fullDSD.split('#')
   let furiD = furiDSD.split('#')
   let fullWordsList: string[] = []
@@ -27,7 +27,7 @@ const Furigana = ({ fullDSD, furiDSD, furi }: Props) => {
   }
   return (
     <>
-      {furi ? (
+      {furiOn ? (
         <>
           {text.map((part) => (
             <ruby>

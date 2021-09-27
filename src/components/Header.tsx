@@ -1,16 +1,17 @@
+import { Link } from 'react-router-dom'
 import logo from '../img/logo.png'
 
 const Header = () => {
   return (
     <header>
       <div className="header-logo">
-        <img src={logo} alt="logo" />
+        <Link to="/"><img src={logo} alt="logo" /></Link>
       </div>
-      <div className="header-list">
-        <a href="">Menu A</a>
-        <a href="">Menu B</a>
-        <a href="">Menu C</a>
-      </div>
+      <nav>
+        <Link to="">Menu A</Link>
+        <Link to="">Menu B</Link>
+        <Link to="">Menu C</Link>
+      </nav>
     </header>
   )
 }
