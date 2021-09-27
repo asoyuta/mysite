@@ -1,6 +1,6 @@
-import { Dialogue, Title } from './index'
+import { Dialogue, Title, useFetch, ErrorMessage, LoadingMessage } from './index'
 import { useParams } from 'react-router-dom'
-import data from '../data/db.json'
+import { ArticleData } from 'index.d'
 
 type Pram = {
   id: string
@@ -9,19 +9,34 @@ type Pram = {
 const Article = () => {
   const { id } = useParams<Pram>()
 
-  const articles = data.articles
-  const article = articles[Number(id)]
-  const { mainInfo, personInfoList, lineInfoList } = article
+  const {
+    data: article,
+    isPending,
+    error,
+  } = useFetch<ArticleData>(`http://localhost:8000/articles/${id}`)
 
-  for (let i = 0; i < personInfoList.length; i++) {
-    personInfoList[i].src =
-      require(`../img/livers/${personInfoList[i].name}.png`).default
+  if (article) {
+    const { personInfoList } = article
+
+    for (let i = 0; i < personInfoList.length; i++) {
+      personInfoList[i].src =
+        require(`../img/livers/${personInfoList[i].name}.png`).default
+    }
   }
 
   return (
     <div className="article">
-      <Title title={mainInfo.title} />
-      <Dialogue lineInfoList={lineInfoList} personInfoList={personInfoList} />
+      {error && <ErrorMessage error={error} />}
+      {isPending && <LoadingMessage />}
+      {article && (
+        <>
+          <Title title={article.mainInfo.title} />
+          <Dialogue
+            lineInfoList={article.lineInfoList}
+            personInfoList={article.personInfoList}
+          />
+        </>
+      )}
     </div>
   )
 }

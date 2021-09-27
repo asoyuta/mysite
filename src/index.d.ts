@@ -28,7 +28,7 @@ export type MainInfo = {
   url: string
 }
 
-export type Article = {
+export type ArticleData = {
   id: number
   mainInfo: MainInfo
   personInfoList: PersonInfo[]
@@ -36,7 +36,7 @@ export type Article = {
 }
 
 export type Data = {
-  articles: Article[]
+  articles: ArticleData[]
 }
 
 declare module '*.json' {

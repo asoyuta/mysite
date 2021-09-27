@@ -1,4 +1,4 @@
-import { Header, Article, ArticleList, Home } from 'components/index'
+import { Header, Article, Home } from 'components/index'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 const App = () => {
@@ -10,9 +10,6 @@ const App = () => {
           <Switch>
             <Route exact path="/">
               <Home />
-            </Route>
-            <Route exact path="/article">
-              <ArticleList />
             </Route>
             <Route path="/article/:id">
               <Article />

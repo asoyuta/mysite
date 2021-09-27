@@ -6,7 +6,7 @@ type Props = {
 
 const ToggleButton = ({ value, onClick, className }: Props) => {
   return (
-    <button onClick={onClick} className={`button ${className ? className : ''}`}>
+    <button onClick={onClick} className={className}>
       {value}
     </button>
   )

@@ -13,9 +13,34 @@ body {
   font-family: 'Arial', 'メイリオ', sans-serif;
 }
 
-////////////////////* body *////////////////////
+////////////////////* a *////////////////////
 
-.button {
+a {
+  text-decoration: none;
+}
+
+////////////////////* error *////////////////////
+
+.error-message {
+  text-align: center;
+  p {
+    color: red;
+    font-size: 25px;
+  }
+}
+
+////////////////////* loading *////////////////////
+
+.loading-message {
+  text-align: center;
+  p {
+    font-size: 25px;
+  }
+}
+
+////////////////////* button *////////////////////
+
+button {
   padding: 5px 12px;
   border: 1px solid black;
   cursor: pointer;
