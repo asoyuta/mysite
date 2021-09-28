@@ -21,16 +21,11 @@ export type LineInfo = {
   desc?: string
 }
 
-export type MainInfo = {
+export type ArticleData = {
   id: number
   title: string
   date: string
   url: string
-}
-
-export type ArticleData = {
-  id: number
-  mainInfo: MainInfo
   personInfoList: PersonInfo[]
   lineInfoList: LineInfo[]
 }

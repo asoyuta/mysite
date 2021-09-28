@@ -38,6 +38,12 @@ a {
   }
 }
 
+////////////////////* loading *////////////////////
+
+.not-found {
+  text-align: center;
+}
+
 ////////////////////* button *////////////////////
 
 button {
@@ -68,7 +74,7 @@ button {
 }
 
 .toggle.on {
-  background-color: rgb(0, 226, 30);
+  background-color: #26ff6f;
 }
 
 .notch {
@@ -76,6 +82,7 @@ button {
   width: 16px;
   border-radius: 50%;
   background-color: white;
+  box-shadow: 0 0 2px black;
   position: absolute;
   top: 2px;
   left: 2px;
@@ -175,9 +182,24 @@ header {
     .display {
       padding: 20px;
       border-radius: 30px;
-      background-color: #92b8ff;
+      background-color: #83ccfd;
       height: 800px;
       overflow: auto;
+      .date {
+        .date-box {
+          width: 150px;
+          padding: 10px;
+          text-align: center;
+          margin: auto;
+          background-color: rgba(0, 0, 0, 0.171);
+          border-radius: 20px;
+          margin-bottom: 10px;
+          p {
+            font-size: 20px;
+            color: white;
+          }
+        }
+      }
     }
   }
 }
@@ -196,7 +218,7 @@ header {
   .speech-bubble {
     position: relative;
     padding: 12px 30px;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
     &:before {
       content: '';

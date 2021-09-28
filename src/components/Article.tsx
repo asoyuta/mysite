@@ -23,15 +23,17 @@ const Article = () => {
         require(`../img/livers/${personInfoList[i].name}.png`).default
     }
   }
-
+  
   return (
     <div className="article">
       {error && <ErrorMessage error={error} />}
       {isPending && <LoadingMessage />}
       {article && (
         <>
-          <Title title={article.mainInfo.title} />
+          <Title title={article.title} />
           <Dialogue
+            date={article.date}
+            url={article.url}
             lineInfoList={article.lineInfoList}
             personInfoList={article.personInfoList}
           />

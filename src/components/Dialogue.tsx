@@ -3,11 +3,13 @@ import { PersonInfo, LineInfo } from '../index.d'
 import { useState } from 'react'
 
 type Props = {
+  date: string
+  url: string
   personInfoList: PersonInfo[]
   lineInfoList: LineInfo[]
 }
 
-const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
+const Dialogue = ({ date, url, personInfoList, lineInfoList }: Props) => {
   const [furiOn, setFuriOn] = useState(true)
   const [tranOn, setTranOn] = useState(true)
   const [firstPersonId, setFirstPersonId] = useState(0)
@@ -43,6 +45,15 @@ const Dialogue = ({ personInfoList, lineInfoList }: Props) => {
         </div>
       </div>
       <div className="display">
+        <>
+          <div className="date">
+            <a href={url}>
+              <div className="date-box">
+                <p>{date.split('T')[0].replace(/-/g, '/')}</p>
+              </div>
+            </a>
+          </div>
+        </>
         {lineInfoList.map((lineInfo) => (
           <>
             {personInfoList.map(

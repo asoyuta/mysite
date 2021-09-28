@@ -13,7 +13,7 @@ const ArticleList = ({ articles }: Props) => {
           {articles.map((article) => (
             <div className="article-preview" key={article.id}>
               <Link to={`/article/${article.id}`}>
-                <h2>{article.mainInfo.title}</h2>
+                <h2>{article.title}</h2>
               </Link>
             </div>
           ))}
