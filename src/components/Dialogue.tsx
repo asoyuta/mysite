@@ -45,15 +45,13 @@ const Dialogue = ({ date, url, personInfoList, lineInfoList }: Props) => {
         </div>
       </div>
       <div className="display">
-        <>
-          <div className="date">
-            <a href={url}>
-              <div className="date-box">
-                <p>{date.split('T')[0].replace(/-/g, '/')}</p>
-              </div>
-            </a>
-          </div>
-        </>
+        <div className="date">
+          <a href={url}>
+            <div className="date-box">
+              <p>{date.split('T')[0].replace(/-/g, '/')}</p>
+            </div>
+          </a>
+        </div>
         {lineInfoList.map((lineInfo) => (
           <>
             {personInfoList.map(
