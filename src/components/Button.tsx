@@ -4,7 +4,7 @@ type Props = {
   className?: string
 }
 
-const ToggleButton = ({ value, onClick, className }: Props) => {
+const Button = ({ value, onClick, className }: Props) => {
   return (
     <button onClick={onClick} className={className}>
       {value}
@@ -12,4 +12,4 @@ const ToggleButton = ({ value, onClick, className }: Props) => {
   )
 }
 
-export default ToggleButton
+export default Button

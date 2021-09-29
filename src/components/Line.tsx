@@ -13,7 +13,11 @@ const Line = ({ personInfo, lineInfo, furiOn, tranOn, firstPerson }: Props) => {
   return (
     <div
       className={`line ${
-        firstPerson === personInfo.name ? 'line-first' : (personInfo.name !== 'THIRD' ? 'line-second' : 'line-third')
+        firstPerson === personInfo.name
+          ? 'line-first'
+          : personInfo.name !== 'THIRD'
+          ? 'line-second'
+          : 'line-third'
       }`}
     >
       <img src={personInfo.src} alt="icon" />

@@ -3,7 +3,7 @@ type Props = {
   onClick: (event: React.MouseEvent<HTMLInputElement>) => void
 }
 
-const ToggleButton = ({ toggled, onClick }: Props) => {
+const Toggle = ({ toggled, onClick }: Props) => {
   return (
     <div onClick={onClick} className={`toggle${toggled ? " on" : ""}`}>
       <div className="notch"/>
@@ -11,4 +11,4 @@ const ToggleButton = ({ toggled, onClick }: Props) => {
   )
 }
 
-export default ToggleButton
+export default Toggle
